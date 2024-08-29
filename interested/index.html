@@ -30,9 +30,9 @@
   </head>
   <body class="bg-white">
     <div class="mx-auto max-w-4xl px-4 sm:px-16 mb-8 font">
-      <h1 class="mt-8 text-gray-800 text-lg sm:text-xl lg:text-4xl text-center">Thank you for your interest!</h1>
+      <h1 class="mt-8 text-gray-800 text-2xl sm:text-2xl md:text-4xl lg:text-4xl text-center">Thank you for your interest!</h1>
 
-      <p class="mt-8 text-gray-800 text-lg sm:text-xl lg:text-lg font-light">
+      <p class="mt-8 text-gray-800 text-md sm:text-xl font-light">
         We're excited to learn more about your business and how you think Health Fusion might benefit it. Fill out the form below and we'll be happy to follow up to schedule a time to chat.
         <br />
         <br />
@@ -46,8 +46,7 @@
               Name
               <sup class="text-red-700 mix-blend-screen">*</sup>
             </label>
-
-            <input type="text" @input.debounce.300ms="handleInput('first_name')" name="first_name" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent autofill:bg-red-400 custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="John Doe">
+            <input type="text" name="first_name" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent autofill:bg-red-400 custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="John Doe">
           </div>
         </div>
 
@@ -57,7 +56,7 @@
               Email
               <sup class="text-red-700 mix-blend-screen">*</sup>
             </label>
-            <input @input.debounce.300ms="handleInput('email')" type="email" name="email" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="john@example.com">
+            <input type="email" name="email" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="john@example.com">
           </div>
         </div>
       </div>
