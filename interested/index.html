@@ -1,13 +1,66 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Health Fusion Interest Form </title>
-    <style type="text/css">
-      html { margin: 0; height: 100%; overflow: hidden; }
-      iframe { position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 0; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="sitemap" href="">
+    <title>Health Fusion - Transform your coaching. Transform your business.</title>
+    <link rel="canonical" href="https://healthfusion.ai">
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Health Fusion">
+    <meta property="og:type" content="image">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://healthfusion.ai/">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:title" content="Health Fusion - Transform your coaching. Transform your business.">
+    <meta name="twitter:description" content="">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBGGY9Z7S3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SBGGY9Z7S3');
+    </script>
   </head>
-  <body>
-    <iframe src="https://app.youform.com/forms/xozoflak" loading="lazy" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+  <body class="bg-white">
+    <div class="mx-auto max-w-4xl px-4 sm:px-16 mb-8 font">
+      <h1 class="mt-8 text-gray-800 text-lg sm:text-xl lg:text-4xl text-center">Thank you for your interest!</h1>
+
+      <p class="mt-8 text-gray-800 text-lg sm:text-xl lg:text-lg font-light">
+        We're excited to learn more about your business and how you think Health Fusion might benefit it. Fill out the form below and we'll be happy to follow up to schedule a time to chat.
+        <br />
+        <br />
+        Alternatively, you're always welcome to reach out to us directly at hello@healthfusion.ai.
+      </p>
+
+      <div class="space-y-8 mt-8">
+        <div class="flex space-x-8">
+          <div class="w-full">
+            <label class="text-sm custom-answer-text-color">
+              Name
+              <sup class="text-red-700 mix-blend-screen">*</sup>
+            </label>
+
+            <input type="text" @input.debounce.300ms="handleInput('first_name')" name="first_name" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent autofill:bg-red-400 custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="John Doe">
+          </div>
+        </div>
+
+        <div class="block sm:flex sm:space-x-6">
+          <div class="w-full">
+            <label for="" class="text-sm custom-answer-text-color">
+              Email
+              <sup class="text-red-700 mix-blend-screen">*</sup>
+            </label>
+            <input @input.debounce.300ms="handleInput('email')" type="email" name="email" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="john@example.com">
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
