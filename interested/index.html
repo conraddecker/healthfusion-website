@@ -39,27 +39,41 @@
         Alternatively, you're always welcome to reach out to us directly at hello@healthfusion.ai.
       </p>
 
-      <div class="space-y-8 mt-8">
-        <div class="flex space-x-8">
-          <div class="w-full">
-            <label class="text-sm custom-answer-text-color">
-              Name
-              <sup class="text-red-700 mix-blend-screen">*</sup>
-            </label>
-            <input type="text" name="first_name" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent autofill:bg-red-400 custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="John Doe">
+      <form action="https://formspree.io/f/xrbzjroz" method="POST">
+        <div class="space-y-8 mt-8">
+          <div class="flex space-x-8">
+            <div class="w-full">
+              <label class="text-sm custom-answer-text-color">
+                Name
+                <sup class="text-red-700 mix-blend-screen">*</sup>
+              </label>
+              <input type="text" name="first_name" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent autofill:bg-red-400 custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="John Doe">
+            </div>
           </div>
-        </div>
 
-        <div class="block sm:flex sm:space-x-6">
-          <div class="w-full">
-            <label for="" class="text-sm custom-answer-text-color">
-              Email
-              <sup class="text-red-700 mix-blend-screen">*</sup>
-            </label>
-            <input type="email" name="email" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="john@example.com">
+          <div class="block sm:flex sm:space-x-6">
+            <div class="w-full">
+              <label for="" class="text-sm custom-answer-text-color">
+                Email
+                <sup class="text-red-700 mix-blend-screen">*</sup>
+              </label>
+              <input type="email" name="email" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="john@example.com">
+            </div>
           </div>
+
+          <div class="block sm:flex sm:space-x-6">
+            <div class="w-full">
+              <label for="" class="text-sm custom-answer-text-color">
+                Company Name
+                <sup class="text-red-700 mix-blend-screen">*</sup>
+              </label>
+              <input type="text" name="company_name" class="block w-full px-0 border-0 border-b focus:ring-0 sm:text-sm bg-transparent custom-answer-text-color-as-border-color custom-answer-text-color custom-placeholder-answer-text-color" placeholder="john@example.com">
+            </div>
+          </div>
+
+          <input type="submit" value="Submit" class="mt-8 bg-black text-white font-bold py-2 px-4 rounded-lg">
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
